@@ -1,0 +1,29 @@
+#m_t{
+  width: 100%;
+  height: 50px;
+  background: url("../img/m_t_bg.jpg");
+  position: fixed;
+  top: 0;
+  left: 0;
+  .s1{
+    font-size: 40px;
+    font-family:·½ÕýÊæÌå;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+  }
+  .s2{
+    font-size: 13px;
+    position: absolute;
+    bottom: 5px;
+    right: 190px;
+  }
+  .s3{
+    font-size: 13px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px;
+}
+}
