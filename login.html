@@ -2,23 +2,42 @@
 <html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
-    <title></title>
+    <title>易贝商城注册页</title>
     <link href="css/base.css" rel="stylesheet" type="text/css">
-    <link href="css/login.css" type="text/css" rel="stylesheet">
+    <link href="css/main.css" type="text/css" rel="stylesheet">
+    <style>
+        body{
+            background: url("img/log_bg.jpg");
+        }
+    </style>
+    <script src="js/jquery-1.8.2.js"></script>
+    <script src="js/login.js"></script>
 </head>
 <body>
-<div id="log_d1">
-<div><label><span>用户名：</span></label><input type="text"></div>
-<div><label><span>密码：</span></label><input type="password"></div>
-<div><label><span>确认密码：</span></label><input type="password"></div>
-<div><label><span>邮箱：</span></label><input type="text"></div>
-<div><label><span>姓名：</span></label><input type="text"></div>
-<div><label><span>性别：</span></label></div>
-<div><label><span>出生日期：</span></label></div>
-<div><label><span>联系方式：</span></label><input type="text"></div>
-<div><label><span>家庭住址：</span></label></div>
-<div><label><span>验证码：</span></label></div>
+<div class="login">
+<div id="m_t">
+    <span class="s1">易贝商城</span>
 </div>
-<div id="log_d2"></div>
+<div id="b_r" onclick="fun()">用户注册</div>
+<div id="s_r">商家注册</div>
+<div id="login_m">
+    <div id="sign_sr">
+        <label for="name">用户名：</label><input type="text" id="name"><br>
+        <label for="password">密码：</label><input type="text" id="password"><br>
+        <label for="pwd">确认密码：</label><input type="text" id="pwd"><br>
+        <label for="sex">性别：</label><input type="radio" id="sex" checked name="r1" value="男">
+        <span class="s1">男</span>
+        <input type="radio" id="sex_1" name="r1" value="女">
+        <span class="s1">女</span><br>
+        <label for="lx_1">类型：</label><input type="radio" id="lx_1" checked name="l1" value="用户注册">
+        <span class="s1">用户注册</span>
+        <input type="radio" id="lx_2" name="l1" value="商家注册">
+        <span class="s1">商家注册</span><br>
+        <label for="phone">联系方式：</label><input type="text" id="phone"><br>
+    </div>
+    <a href="#" id="but">立即注册</a>
+    <img src="img/login_succ.jpg" id="success">
+</div>
+</div>
 </body>
 </html>

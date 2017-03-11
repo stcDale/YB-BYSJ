@@ -1,0 +1,92 @@
+@charset "UTF-8";
+.index #m_t {
+  width: 100%;
+  height: 50px;
+  background: url("../img/m_t_bg.jpg");
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .index #m_t .s1 {
+    font-size: 40px;
+    font-family: 方正舒体;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+  .index #m_t .s2 {
+    font-size: 13px;
+    position: absolute;
+    bottom: 5px;
+    right: 190px; }
+  .index #m_t .s3 {
+    font-size: 13px;
+    position: absolute;
+    bottom: 5px;
+    right: 10px; }
+
+.login #m_t {
+  width: 100%;
+  height: 50px;
+  background: url("../img/m_t_bg.jpg");
+  position: fixed;
+  top: 0;
+  left: 0; }
+  .login #m_t .s1 {
+    font-size: 40px;
+    font-family: 方正舒体;
+    margin: auto;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%); }
+.login #login_m {
+  width: 450px;
+  height: 500px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -40%); }
+  .login #login_m label {
+    display: inline-block;
+    width: 100px;
+    height: 26px;
+    text-align: right;
+    margin-left: 51px;
+    margin-top: 30px;
+    font-size: 18px;
+    font-family: 方正舒体; }
+  .login #login_m input {
+    width: 200px;
+    height: 26px;
+    font-size: 16px;
+    background: #ebebe4;
+    border-radius: 10px;
+    outline: none; }
+  .login #login_m #lx_1, .login #login_m #lx_2, .login #login_m #sex, .login #login_m #sex_1 {
+    width: 25px;
+    height: 16px; }
+  .login #login_m .s1 {
+    display: inline-table;
+    width: 65px;
+    height: 29px;
+    text-align: center;
+    font-size: 16px;
+    vertical-align: middle; }
+  .login #login_m a {
+    text-decoration: none; }
+  .login #login_m #but {
+    margin-top: 30px;
+    display: inline-block;
+    width: 150px;
+    height: 50px;
+    background: rgba(95, 52, 57, 0.62);
+    margin-left: 175px;
+    text-align: center;
+    font-size: 20px;
+    line-height: 50px;
+    font-family: 微软雅黑;
+    border-radius: 20px;
+    color: #ffff42; }
+
+/*# sourceMappingURL=main.css.map */
