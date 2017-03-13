@@ -6,7 +6,7 @@ $(function () {
         if(v1==""||v1==null){
             $("#name+span").text("");
             $(this).focus();
-            $(this).after("<span>昵称不可为空</span>");
+            $("#ts").after("<span>昵称不可为空</span>");
         }
         else{
             $("#name+span").text("");
@@ -17,7 +17,7 @@ $(function () {
         if(v1==""||v1==null){
             $("#password+span").text("");
             $(this).focus();
-            $(this).after("<span>密码不可为空</span>")
+            $("#ts").after("<span>密码不可为空</span>")
         }
         else{
             $("#password+span").text("");
@@ -29,12 +29,12 @@ $(function () {
         if(v1==""||v1==null){
             $("#pwd+span").text("");
             $(this).focus();
-            $(this).after("<span>不可为空</span>")
+            $("#ts").after("<span>不可为空</span>")
         }
         else if(v1!=$("#password").val()){
             $("#pwd+span").text("");
             $(this).focus();
-            $(this).after("<span>上下不匹配</span>")
+            $("#ts").after("<span>上下不匹配</span>")
         }
         else{
             $("#pwd+span").text("");
@@ -45,16 +45,16 @@ $(function () {
         if(v1==""||v1==null){
             $("#phone+span").text("");
             $(this).focus();
-            $(this).after("<span>联系方式不可为空</span>")
+            $("#ts").after("<span>联系方式不可为空</span>")
         }
         else if(v1.length!=11||isNaN(v1)==true){
-                $("#phone+span").text("");
-                $(this).focus();
-                $(this).after("<span>请填写正确格式</span>")
-            }
-            else{
-                $("#phone+span").text("");
-            }
+            $("#phone+span").text("");
+            $(this).focus();
+            $("#ts").after("<span>请填写正确格式</span>")
+        }
+        else{
+            $("#phone+span").text("");
+        }
     });
     $("#but").click(function () {
         var v1=$("#name").val();
