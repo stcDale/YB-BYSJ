@@ -6,10 +6,11 @@ $(function () {
         if(v1==""||v1==null){
             $("#name+span").text("");
             $(this).focus();
-            $("#ts").after("<span>昵称不可为空</span>");
+            $("#ts").text("用户名不可为空");
         }
         else{
             $("#name+span").text("");
+            $("#ts").text("");
         }
     });
     $("#password").blur(function () {
@@ -17,11 +18,12 @@ $(function () {
         if(v1==""||v1==null){
             $("#password+span").text("");
             $(this).focus();
-            $("#ts").after("<span>密码不可为空</span>")
+            $("#ts").text("密码不可为空");
         }
         else{
             $("#password+span").text("");
             $("#pwd").removeAttr("disabled","disabled");
+            $("#ts").text("");
         }
     });
     $("#pwd").blur(function () {
@@ -29,15 +31,16 @@ $(function () {
         if(v1==""||v1==null){
             $("#pwd+span").text("");
             $(this).focus();
-            $("#ts").after("<span>不可为空</span>")
+            $("#ts").text("密码不可为空");
         }
         else if(v1!=$("#password").val()){
             $("#pwd+span").text("");
             $(this).focus();
-            $("#ts").after("<span>上下不匹配</span>")
+            $("#ts").text("上下不匹配");
         }
         else{
             $("#pwd+span").text("");
+            $("#ts").text("");
         }
     });
     $("#phone").blur(function () {
@@ -45,15 +48,16 @@ $(function () {
         if(v1==""||v1==null){
             $("#phone+span").text("");
             $(this).focus();
-            $("#ts").after("<span>联系方式不可为空</span>")
+            $("#ts").text("联系方式不可为空");
         }
         else if(v1.length!=11||isNaN(v1)==true){
             $("#phone+span").text("");
             $(this).focus();
-            $("#ts").after("<span>请填写正确格式</span>")
+            $("#ts").text("请填写正确格式");
         }
         else{
             $("#phone+span").text("");
+            $("#ts").text("");
         }
     });
     $("#but").click(function () {
@@ -69,7 +73,7 @@ $(function () {
             data:"name="+v1+"&pwd="+v2+"&sex="+v3+"&lx="+v4+"&phone="+v5,
             success: function (msg) {
                 if(msg==1){
-                    $("#success").show();
+                    $("#ts").text("注册成功");
                 }
                 else{
                     alert(msg)
